@@ -1,0 +1,19 @@
+let alfa = "abcdefghijklmnopqrstuwvxyz";
+alfa = alfa.split("");
+let alfaIndex = -1; 
+let felGissning = "";
+let dash = ""; 
+let info = ""; 
+let gissning = ""; 
+let guess = 0;
+let error = true;
+let guessesMade = "";
+let countDash = 1;
+const ord = ["Programmering", "Stockholm", "Studenter","Javascript","Afterwork"];
+let slumpNummer = (Math.random() * (ord.length-1));
+slumpNummer = Math.round(slumpNummer);
+const ordArray = ord[slumpNummer].split("");
+for (i = 0; i < ordArray.length; i++) {dash += "-"} 
+let dashArray = dash.split("");
+let summa = dash; 
+let liv = 5; 
